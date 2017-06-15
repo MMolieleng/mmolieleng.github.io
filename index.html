@@ -41,7 +41,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col">
+            <div class="col-md-8 col">
                 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello World&quot;</span><span style="color: #333333">);</span>
                 <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">foo</span><span style="color: #333333">()</span>
                 <span style="color: #333333">{</span>
@@ -50,6 +50,45 @@
                 <span style="color: #333333">}</span>
                 </pre></div>
 
+
+        
+            </div>
+        </div>
+
+        <h1 class="text-center">
+            Palindrome Program In Java
+        </h1>
+
+        <div class="container">
+            <div class="row">
+                <pre>
+                    <code>
+                        import java.util.*;
+ 
+                        class Palindrome
+                        {
+                        public static void main(String args[])
+                        {
+                            String original, reverse = "";
+                            Scanner in = new Scanner(System.in);
+                        
+                            System.out.println("Enter a string to check if it is a palindrome");
+                            original = in.nextLine();
+                        
+                            int length = original.length();
+                        
+                            for ( int i = length - 1; i >= 0; i-- )
+                                reverse = reverse + original.charAt(i);
+                        
+                            if (original.equals(reverse))
+                                System.out.println("Entered string is a palindrome.");
+                            else
+                                System.out.println("Entered string is not a palindrome.");
+                        
+                        }
+                        }
+                    </code>
+                </pre>
             </div>
         </div>
     </div>
@@ -57,5 +96,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </body>
 </html>
