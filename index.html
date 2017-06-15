@@ -8,8 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
   </head>
   <body>
 
@@ -70,25 +69,25 @@
  
                         class Palindrome
                         {
-                        public static void main(String args[])
-                        {
-                            String original, reverse = "";
-                            Scanner in = new Scanner(System.in);
-                        
-                            System.out.println("Enter a string to check if it is a palindrome");
-                            original = in.nextLine();
-                        
-                            int length = original.length();
-                        
-                            for ( int i = length - 1; i >= 0; i-- )
-                                reverse = reverse + original.charAt(i);
-                        
-                            if (original.equals(reverse))
-                                System.out.println("Entered string is a palindrome.");
-                            else
-                                System.out.println("Entered string is not a palindrome.");
-                        
-                        }
+                            public static void main(String args[])
+                            {
+                                String original, reverse = "";
+                                Scanner in = new Scanner(System.in);
+                            
+                                System.out.println("Enter a string to check if it is a palindrome");
+                                original = in.nextLine();
+                            
+                                int length = original.length();
+                            
+                                for ( int i = length - 1; i >= 0; i-- )
+                                    reverse = reverse + original.charAt(i);
+                            
+                                if (original.equals(reverse))
+                                    System.out.println("Entered string is a palindrome.");
+                                else
+                                    System.out.println("Entered string is not a palindrome.");
+                            
+                            }
                         }
                     </code>
                 </pre>
@@ -100,5 +99,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </body>
 </html>
