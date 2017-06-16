@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--<link rel="stylesheet"  type="text/css" href="./prism.css">-->
     
-    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">-->
-    <link rel="stylesheet" href="highlight_night_theme.css">    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+       
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
@@ -53,60 +53,51 @@
     </div>
   </nav>
 
-        <h1 class="text-center">
-            Palindrome Program In Java
-        </h1>
 
-        <!--<div class="container">
-            <div class="row">-->
-                
-            <!--</div>
-        </div>-->
-    <!--</div>-->
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Palindrome in Java
+            </h1>
+            <div class="columns">
+                <div class="column">
+                    <pre style="background-color:#FFF">
+                        <code>
+                            import java.util.*;
 
-
-<pre>
-    <code class="c">
-        public class Testing{
-            $x = 0;
-            $y = 10;
-        };
-        echo "Hello";
-    </code>
-</pre>
-
-<div class="columns">
-    <div class="column is-half">
-        <pre>
-            <code class="java">
-                import java.util.*;
-
-                class Palindrome
-                {
-                    public static void main(String args[])
-                    {
-                        String original, reverse = "";
-                        Scanner in = new Scanner(System.in);
-                    
-                        System.out.println("Enter a string to check if it is a palindrome");
-                        original = in.nextLine();
-                    
-                        int length = original.length();
-                    
-                        for ( int i = length -1; i >=0; i-- )
-                            reverse = reverse + original.charAt(i);
-                    
-                        if (original.equals(reverse))
-                            System.out.println("Entered string is a palindrome.");
-                        else
-                            System.out.println("Entered string is not a palindrome.");
-                    
-                    }
-                }
-            </code>
-        </pre>
+                            class Palindrome
+                            {
+                                public static void main(String args[])
+                                {
+                                    String original, reverse = "";
+                                    Scanner in = new Scanner(System.in);
+                                
+                                    System.out.println("Enter a string to check if it is a palindrome");
+                                    original = in.nextLine();
+                                
+                                    int length = original.length();
+                                
+                                    for ( int i = length -1; i >=0; i-- )
+                                        reverse = reverse + original.charAt(i);
+                                
+                                    if (original.equals(reverse))
+                                        System.out.println("Entered string is a palindrome.");
+                                    else
+                                        System.out.println("Entered string is not a palindrome.");
+                                
+                                }
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     
@@ -115,5 +106,6 @@
     <!--<script src="prism.js"></script>-->
 
     <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="highlight_night_theme.css"> 
   </body>
 </html>
