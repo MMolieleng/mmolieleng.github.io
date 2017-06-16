@@ -9,7 +9,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet"  type="text/css" href="./prism.css">
+    <!--<link rel="stylesheet"  type="text/css" href="./prism.css">-->
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="highlight_night_theme.css">    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
 
@@ -59,48 +63,54 @@
 
 
 <pre>
-    <code class="language-c++">
-        int main(void)
+    <code class="c">
+        public class Testing{
+            $x = 0;
+            $y = 10;
+        };
+        echo "Hello";
     </code>
 </pre>
 
-    <pre>
-                    <code class="language-java">
-                        import java.util.*;
- 
-                        class Palindrome
-                        {
-                            public static void main(String args[])
-                            {
-                                String original, reverse = "";
-                                Scanner in = new Scanner(System.in);
-                            
-                                System.out.println("Enter a string to check if it is a palindrome");
-                                original = in.nextLine();
-                            
-                                int length = original.length();
-                            
-                                for ( int i = length - 1; i >= 0; i-- )
-                                    reverse = reverse + original.charAt(i);
-                            
-                                if (original.equals(reverse))
-                                    System.out.println("Entered string is a palindrome.");
-                                else
-                                    System.out.println("Entered string is not a palindrome.");
-                            
-                            }
-                        }
-                    </code>
-                </pre>
+<div class="columns">
+    <div class="column">
+        <pre>
+            <code class="java">
+                import java.util.*;
+
+                class Palindrome
+                {
+                    public static void main(String args[])
+                    {
+                        String original, reverse = "";
+                        Scanner in = new Scanner(System.in);
+                    
+                        System.out.println("Enter a string to check if it is a palindrome");
+                        original = in.nextLine();
+                    
+                        int length = original.length();
+                    
+                        for ( int i = length -1; i >=0; i-- )
+                            reverse = reverse + original.charAt(i);
+                    
+                        if (original.equals(reverse))
+                            System.out.println("Entered string is a palindrome.");
+                        else
+                            System.out.println("Entered string is not a palindrome.");
+                    
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+</div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="prism.js"></script>
+    <!--<script src="prism.js"></script>-->
 
-    <script>
-
-    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
