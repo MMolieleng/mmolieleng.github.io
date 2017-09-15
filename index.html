@@ -5,190 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bulms CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet"  type="text/css" href="./prism.css">-->
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-       
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
 
-    <nav class="nav has-shadow" id="top">
-    <div class="container">
-      <div class="nav-left">
-        <a class="nav-item" href="../index.html">
-          <!--<img src="../images/bulma.png" alt="Description">-->
-          Code4Dev
-        </a>
-      </div>
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class="nav-right nav-menu">
-        <a class="nav-item is-tab is-active">
-          C
-        </a>
-        <a class="nav-item is-tab">
-          C++
-        </a>
-        <a class="nav-item is-tab">
-          Java
-        </a>
-        <a class="nav-item is-tab">
-          Android
-        </a>
-        <a class="nav-item is-tab">
-          Unix
-        </a>
-        <a class="nav-item is-tab">
-          Algorithms
-        </a>
-      </div>
-    </div>
-  </nav>
-
-
-<section class="hero">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Palindrome in Java
-            </h1>
-            <div class="columns">
-                <div class="column">
-                    <pre style="background-color:#FFF">
-                        <code>
-                            import java.util.*;
-
-                            class Palindrome
-                            {
-                                public static void main(String args[])
-                                {
-                                    String original, reverse = "";
-                                    Scanner in = new Scanner(System.in);
-                                
-                                    System.out.println("Enter a string to check if it is a palindrome");
-                                    original = in.nextLine();
-                                
-                                    int length = original.length();
-                                
-                                    for ( int i = length -1; i >=0; i-- )
-                                        reverse = reverse + original.charAt(i);
-                                
-                                    if (original.equals(reverse))
-                                        System.out.println("Entered string is a palindrome.");
-                                    else
-                                        System.out.println("Entered string is not a palindrome.");
-                                
-                                }
-                            }
-                        </code>
-                    </pre>
+ <div class="containter-fluid" style="height: 2em;">
+     <div class="row" style="border-bottom: 1px solid #222;">
+         <div class="col-2 bg-inverse" style="">
+             <h1 class="display-4 text-white text-center" style="width: 100%;height: 100%;">M.</h1>
+         </div>
+     </div>
+ </div>
+  <div class="container" style="margin-top: 3.5em;">
+      
+     <div class="row">
+          <div class="col-4">
+            <div class="row">
+                
+                <div class="col-12" style="">
+                    <img src="./profile.jpg" class="img-thumbnail" alt="" style="width: 280px; height: 280px;border-radius: 100%;">
                 </div>
+                <div class="col-12">
+                    
+                    <h3 class="display-4">Skills</h3>
+
+                        <span class="label lead label-default">Android</span>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+
+                        <span class="label lead label-default">Ionic 2</span>
+                        <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 78%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">78%</div>
+                        </div>
+
+                </div>
+
             </div>
-        </div>
-    </div>
-</section>
+          </div>
 
-
-<section class="hero">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                            </p>
-                            <p class="subtitle">
-                            Jeff Atwood
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                            <span>
-                                View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                            </span>
-                            </p>
-                            <p class="card-footer-item">
-                            <span>
-                                Share on <a href="#">Facebook</a>
-                            </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                            </p>
-                            <p class="subtitle">
-                            Jeff Atwood
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                            <span>
-                                View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                            </span>
-                            </p>
-                            <p class="card-footer-item">
-                            <span>
-                                Share on <a href="#">Facebook</a>
-                            </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-
-
-                <div class="column is-6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                            </p>
-                            <p class="subtitle">
-                            Jeff Atwood
-                            </p>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                            <span>
-                                View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                            </span>
-                            </p>
-                            <p class="card-footer-item">
-                            <span>
-                                Share on <a href="#">Facebook</a>
-                            </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
+          <div class="col-8">
+            <div class="row" style="height: 200px;">
+                <!-- <h1 class="display-2">Mohale Molieleng</h1> -->
+                <h2 class="display-4">Welcome to my hood, Talk is cheap, show some code</h2>
             </div>
-        </div>
-    </div>
-</section>
+
+
+          </div>
+     </div>
+  </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <!--<script src="prism.js"></script>-->
-
-    <script>hljs.initHighlightingOnLoad();</script>
-    <link rel="stylesheet" href="highlight_night_theme.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
